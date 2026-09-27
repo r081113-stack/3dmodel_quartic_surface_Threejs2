@@ -99,15 +99,13 @@
 
   function addHelpers() {
   const axesHelper = new THREE.AxesHelper(2.5);
-  axesHelper.setColors(0x000000, 0x000000, 0x000000); // 3軸すべてを黒に設定
+  axesHelper.setColors(0x000000, 0x000000, 0x000000); 
   scene.add(axesHelper);
 
   const grid = new THREE.GridHelper(4, 10, 0xdddddd, 0xeeeeee);
   grid.position.y = -2.0;
   scene.add(grid);
-  
-  // （以下略）
-}
+ }
     const canvas = document.createElement('canvas');
     canvas.width = 128; canvas.height = 64;
     const ctx = canvas.getContext('2d');
